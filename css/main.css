@@ -1,0 +1,549 @@
+/* # Start of Variables # */
+:root {
+    --main-Color: #10cab7;
+    --bold-weight: 800;
+    --main-padding: 25px;
+    --main-width: 75%;
+}
+
+/* # End of Variables # */
+
+/* # Start of Global # */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "work sans", sans-serif;
+}
+
+body {
+    height: 150vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.visited {
+    font-size: 60px;
+    color: #2c4755;
+}
+
+/* # End of Global # */
+
+/* BTN */
+.BTN {
+    position: fixed;
+    right: 30px;
+    bottom: -100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--main-Color);
+    background-color: #ebeced;
+    font-size: 45px;
+    border: none;
+    transition: 0.3s;
+}
+
+.BTN a {
+    position: relative;
+    color: var(--main-Color);
+    text-decoration: none;
+}
+
+/* Btn */
+
+/* # Start of Header # */
+header {
+    height: 60px;
+}
+
+header [alt="logo"] {
+    width: 60px;
+}
+
+header .top-header {
+    width: var(--main-width);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top-header .menu {
+    position: relative;
+}
+
+header .top-header .menu .icon {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30px;
+    cursor: pointer;
+}
+
+header .top-header .menu .icon span {
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+header .top-header .menu .icon span:first-child {
+    background-color: #000000;
+    width: 100%;
+}
+
+header .top-header .menu .icon span:nth-child(2) {
+    background-color: #000000;
+    width: 70%;
+    transition: 0.2s;
+}
+
+header .top-header .menu .icon span:last-child {
+    background-color: #000000;
+    width: 100%;
+}
+
+header .top-header .menu .links {
+    position: absolute;
+    z-index: 4;
+    width: 150px;
+    right: 0;
+    top: calc(100% + 10px);
+    background: #f6f6f6;
+    font-size: 20px;
+    display: none;
+    transition: 0.2s;
+}
+
+header .top-header .menu .links::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    border-color: transparent transparent #f6f6f6;
+    right: 5px;
+    top: -18px;
+    z-index: -1;
+}
+
+header .top-header .menu .links li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+header .top-header .menu .links li {
+    list-style: none;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+header .top-header .menu .links li a {
+    display: inline-block;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header .top-header .menu .links li a:hover {
+    padding-left: 15px;
+}
+
+/* # End of Header # */
+
+/* # Start of intro #*/
+.intro {
+    width: 100%;
+    height: 315px;
+    background-image: url(../Images/MB-ABenavides.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro-text {
+    width: 100%;
+    height: 260px;
+}
+
+.intro-h1 {
+    text-align: center;
+    color: var(--main-Color);
+    text-transform: capitalize;
+    font-weight: 800;
+    margin: 40px;
+}
+
+.intro-para {
+    text-align: center;
+    width: 310px;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+/* # End of intro #*/
+
+/* # start of process #*/
+.process {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.process .container {
+    padding: 60px 0 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+}
+
+.process .container .feat {
+    padding: var(--main-padding);
+    text-align: center;
+}
+
+.process .container .feat i {
+    color: var(--main-Color);
+}
+
+.process .container .feat h2 {
+    margin: 10px 0;
+    font-weight: var(--bold-weight);
+    text-transform: capitalize;
+}
+
+.process .container .feat p {
+    color: #707070;
+    line-height: 1.2;
+}
+
+/* # End of process #*/
+
+/* Start of services */
+.services .container {
+    padding: var(--main-padding);
+    margin-bottom: 38px;
+}
+
+.top h1 {
+    text-align: center;
+    color: #ebeced;
+    font-size: 90px;
+    letter-spacing: -5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.top p {
+    text-align: center;
+    margin-top: -29px;
+    text-transform: capitalize;
+}
+
+.services .container .content {
+    display: grid;
+    width: var(--main-width);
+    margin: auto;
+    margin-top: 60px;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.services .container .content .col .serv {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+.services .container .content .col .serv i {
+    color: var(--main-Color);
+    flex-basis: 60px;
+}
+
+.services .container .content .col .serv .text {
+    flex: 1;
+}
+
+.services .container .content .col .serv h1 {
+    margin: 0 0 15px;
+}
+
+.services .container .content .col .serv p {
+    line-height: 1.4;
+    color: #707070;
+}
+
+.serv {
+    margin-bottom: 45px;
+}
+
+.services .container .content .col .square {
+    position: relative;
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/shutterstock-459943711.jpg);
+    background-size: cover;
+}
+
+.services .container .content .col .square::after {
+    content: "";
+    position: absolute;
+    background-color: #2c4755;
+    width: calc(100%/3);
+    height: calc(100% + 100px);
+    right: 0;
+    top: -50px;
+    transform: translate(50%);
+    z-index: -1;
+}
+
+/* End of services */
+
+/* Start of portfolio */
+.portfolio .top {
+    margin: 0;
+}
+
+.portfolio {
+    background-color: #fafafa;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portfolio .container {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.portfolio .container .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio .container .project div:first-child {
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/top11.png);
+    background-size: 428px 300px;
+}
+
+.portfolio .container .project .text {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+
+.portfolio .container .project .text p {
+    color: #707070;
+}
+
+/* End of portfolio */
+
+/* Start of about */
+
+.about .container {
+    width: var(--main-width);
+    min-height: 440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container .box-shape {
+    width: 30%;
+    height: 315px;
+    background-image: url(../Images/web-development-concept-with-programmer-ar_107791-17049.jpg);
+    background-size: 320px 317px;
+    ;
+    position: relative;
+}
+
+.about .container .box-shape::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, calc(-27%/2));
+    background-color: #e7e7e7;
+    width: calc(3000%/110);
+    height: calc(45300%/330);
+    z-index: -1;
+}
+
+.about .container .box-shape .l-shape {
+    position: absolute;
+    background-color: var(--main-Color);
+    width: 90%;
+    height: calc(29200%/330);
+    top: 0;
+    right: 0;
+    translate: 50%;
+    z-index: -1;
+}
+
+.about .container .box-shape .l-shape::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background-color: #ffffff;
+    width: calc(100%/3);
+    height: 80%;
+}
+
+.about .container .paragraphs {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container .paragraphs p:first-child {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 40pt;
+}
+
+.about .container .paragraphs p:last-child {
+    position: relative;
+    line-height: 1.9;
+    color: #575757;
+}
+
+.about .container .paragraphs p:last-child::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-Color);
+    left: 0;
+    top: -5px;
+    width: 60%;
+    height: 3px;
+}
+
+/*  End of about */
+
+/* Start of contact */
+.contact {
+    padding-bottom: 50px;
+    background-color: #fafafa;
+}
+
+.contact .container {
+    width: var(--main-width);
+    margin: auto;
+}
+
+.contact .container .social-links h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #2c4755;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.social-icons {
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-icons a {
+    width: 70px;
+    height: 60px;
+    font-size: 40px;
+    color: var(--main-Color);
+}
+
+.contact .container .social-icons a i {
+    transition: all 0.1s linear;
+}
+
+.contact .container .social-icons a i:hover {
+    font-size: 50px;
+}
+
+/* End of contact */
+
+/* Start of footer */
+footer {
+    background-color: #2c4755;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+}
+
+footer span {
+    color: var(--main-Color);
+    text-transform: uppercase;
+}
+
+/* End of footer */
+
+@media (max-width: 1316px) {
+    .services .container .content .col .square {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .top h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about .container .box-shape {
+        display: none;
+    }
+
+    .about .container .paragraphs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .services .container .content .col .serv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
